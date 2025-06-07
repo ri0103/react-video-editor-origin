@@ -1,13 +1,13 @@
 {
   "name": "remotion-captions",
-  "private": true,
   "version": "0.0.72",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@designcombo/events": "^1.0.2",
@@ -50,6 +50,7 @@
     "lodash-es": "^4.17.21",
     "lucide-react": "^0.441.0",
     "non.geist": "^1.0.2",
+    "next": "14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-draggable": "^4.4.6",
@@ -65,23 +66,22 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5",
     "@eslint/js": "^9.9.0",
     "@types/lodash": "^4.17.9",
-    "@types/node": "^22.5.5",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.12",
-    "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0"
   }
 }
